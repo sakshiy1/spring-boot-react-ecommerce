@@ -1,0 +1,43 @@
+.admin-container {
+    background-image: url('/images/bg2.jpg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+.btn {
+    align-self: stretch;
+    display: inline-block;
+    padding: 20px 30px;
+    position: center;
+    font-size: 16px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(46, 23, 42);
+    background-color: azure;
+    border: brown;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0,2s ease;
+  }
+
+  .btn-primary {
+    background-color: rgb(153, 41, 119);
+  }
+  
+  .btn-primary:hover {
+    background-color: #c22cae; /* Darker shade for hover */
+  }
+  
+  .btn-primary:active {
+    background-color: #a81440; /* Even darker shade for active */
+    transform: scale(0.95); /* Slight click effect */
+  }
+  
+  /* Disabled button state */
+  .btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }

@@ -1,0 +1,57 @@
+/* Apply the background image to the entire body */ html, body 
+{ height: 100%; 
+  margin: 0; /* Remove default margins */ 
+  padding: 0; /* Remove default padding */ 
+}
+
+ body { 
+  background-image: url('../Components/images/bg1.jpg');
+  background-size: contain; /* Adjust the image size */ 
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+   }
+   
+   
+   /* Ensure high-level container component uses full height */
+    .app-container { 
+      background-image: url('/src/Components/images/bg2.jpg');
+      background-size: auto;
+      background-position: center;
+      background-repeat: repeat;
+      
+     
+    }
+
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #863386;
+  padding: 3rem;
+}
+
+.center-text {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-family: Copperplate, Papyrus, fantasy;
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  text-shadow: 2px 2px 5px rgb(228, 215, 215);
+  transform: translateX(-50%);
+}
+
+.corner-image {
+  position: absolute;
+  left: 5ch;
+}
+
+.navbar-logo {
+  height: 80px;
+  width: auto;
+}
+

@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+    product-catalog-service:
+        image: saky11/product-microservice-product-catalog-service:0.0.1-SNAPSHOT
+        ports:
+            - "8000:8000"
+        environment:
+           SPRING.DATASOURCE.URL: jdbc:mysql://db:3306/product_catalog
+           SPRING.DATASOURCE.USERNAME: root
+           SPRING.DATASOURCE.PASSWORD: sakshi11  
+        depends_on:
+            - db
+            
+    db:
+        image: mysql:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: sakshi11
+            MYSQL_DATABASE: product_catalog
+        ports:
+           - "3306:3306"        
+             
